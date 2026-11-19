@@ -1,0 +1,20 @@
+# Database credentials
+Database.php
+.env
+.env.*
+
+# Database backups
+*.sql
+*.sql.gz
+
+# Logs
+*.log
+
+# Git
+.git/
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+DEPLOY_README.txt

@@ -1,0 +1,38 @@
+# PulseMed Essentials — Apache configuration
+
+# Enable rewrite engine
+Options -Indexes
+RewriteEngine On
+
+# Force HTTPS (uncomment after SSL is installed)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Block direct access to Database.php
+<Files "Database.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Block access to any .sql files if accidentally uploaded
+<FilesMatch "\.sql$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# PHP settings
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+</IfModule>
