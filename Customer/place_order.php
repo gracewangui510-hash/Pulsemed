@@ -1085,5 +1085,6 @@ $available_stock = (int) $product["stock"];
 
 </script>
 
+<script src="/assets/js/pulsemed-animations.js?v=1" defer></script>
 </body>
 </html>

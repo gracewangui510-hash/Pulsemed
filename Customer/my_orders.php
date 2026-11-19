@@ -1245,6 +1245,7 @@ foreach ($orders as $order) {
 </footer>
 
 
+<script src="/assets/js/pulsemed-animations.js?v=1" defer></script>
 </body>
 
 </html>

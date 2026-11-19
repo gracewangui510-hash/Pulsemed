@@ -58,7 +58,7 @@ $types = "";
 
 if ($search !== "") {
     $sql .= " AND (name LIKE ? OR category LIKE ? OR description LIKE ?)";
-    
+
     $search_value = "%" . $search . "%";
 
     $params[] = $search_value;
@@ -70,7 +70,7 @@ if ($search !== "") {
 
 if ($category !== "") {
     $sql .= " AND category = ?";
-    
+
     $params[] = $category;
     $types .= "s";
 }
@@ -888,6 +888,7 @@ $product_count = $result->num_rows;
 
 </footer>
 
+<script src="/assets/js/pulsemed-animations.js?v=1" defer></script>
 </body>
 </html>
 

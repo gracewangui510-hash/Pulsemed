@@ -1468,6 +1468,7 @@ $recent_orders_result = $recent_orders->get_result();
 </footer>
 
 
+<script src="/assets/js/pulsemed-animations.js?v=1" defer></script>
 </body>
 </html>
 

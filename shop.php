@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 
 require_once __DIR__ . "/database.php";
@@ -2343,5 +2343,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="/assets/js/pulsemed-animations.js?v=1" defer></script>
 </body>
 </html>

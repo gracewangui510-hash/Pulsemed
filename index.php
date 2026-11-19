@@ -1570,6 +1570,7 @@ $whatsapp_link = preg_replace('/[^0-9]/', '', $whatsapp_number);
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="/assets/js/pulsemed-animations.js?v=1" defer></script>
 </body>
 
 </html>
